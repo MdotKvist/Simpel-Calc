@@ -6,43 +6,63 @@ using namespace std;
 
 int main()
 {
-	float FørsteVærdi;
+	float Fï¿½rsteVï¿½rdi;
 	char fortegn;
-	float SidsteVærdi;
+	float SidsteVï¿½rdi;
 	float Resultat;
 
 	cout << "Lommeregner v.1.0.0\n\n";
 
-	cout << "indtast værdi. \n";
-	cin >> FørsteVærdi; cout << "\n";
+	//indtast vÃ¦rdi fÃ¸r for-tegn
+
+	cout << "indtast vï¿½rdi. \n";
+	cin >> Fï¿½rsteVï¿½rdi; cout << "\n";
+
+	//indstast fortegn
 
 	cout << "Hvilket for tegn vil du at bruge? (+, -, *, /)\n";
 	cin >> fortegn; cout << "\n";
 
-	cout << "indtast den sidste værdi: ";
-	cin >> SidsteVærdi;
+	// indtast vÃ¦rdi efter fortegnet
+
+	cout << "indtast den sidste vï¿½rdi: ";
+	cin >> SidsteVï¿½rdi;
+
+	//hvis fortegn er = plus skal det plusses
 
 	if (fortegn == '+')
 	{
 		cout << "=";
-		Resultat = FørsteVærdi + SidsteVærdi;
+		Resultat = Fï¿½rsteVï¿½rdi + SidsteVï¿½rdi;
 		cout << Resultat;
 	}
+
+	//hvis fortegn = - skal det trÃ¦kkes fra hinnanden
+
 	else if (fortegn == '-') {
 		cout << "=";
-		Resultat = FørsteVærdi - SidsteVærdi;
+		Resultat = Fï¿½rsteVï¿½rdi - SidsteVï¿½rdi;
 		cout << Resultat;
 	}
+
+	//hvis fortegn er = * skal det ganges
+
 	else if (fortegn == '*') {
 		cout << "=";
-		Resultat = FørsteVærdi * SidsteVærdi;
+		Resultat = Fï¿½rsteVï¿½rdi * SidsteVï¿½rdi;
 		cout << Resultat;
 	}
+
+	//hvis fortegn er / skal det divideres
+
 	else if (fortegn == '/') {
 		cout << "=";
-		Resultat = FørsteVærdi / SidsteVærdi;
+		Resultat = Fï¿½rsteVï¿½rdi / SidsteVï¿½rdi;
 		cout << Resultat;
 	}
+
+	//ellers skal der meldes fejl og spÃ¸rge om man vil starte forfra ja starter forfra nej lukker programmet ned
+
 	else {
 		int JaEllerNej;
 		cout << "Udregning ikke muligt i denne version.\n1) Start forfra\n2) Exit\n";
